@@ -1,9 +1,30 @@
-# Michael le Riche tech test for Venn
+# Michael le Riche – Venn Tech Test
 
-Used template for vite, React + tailwindcss + TypeScript projects with some tools preconfigured.
+A tech test project scaffolded with Vite, React, TailwindCSS, and TypeScript.
 
-## About
+## 🛠️ Tech Stack
 
-Run tests: npm run test
-Run dev server at http://localhost:5173/: npm run dev
+- **Framework:** React (via Vite)
+- **Styling:** TailwindCSS
+- **Language:** TypeScript
+- **Testing:** Vitest + Testing Library
 
+## 🚀 Getting Started
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run Local Environment 
+
+```bash
+npm run dev
+```
+
+### Run Tests 
+
+```bash
+npm run test
+```
