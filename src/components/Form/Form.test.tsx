@@ -57,7 +57,9 @@ describe('Form', () => {
       expect(
         screen.getByText(/Form submitted successfully!/i)
       ).toBeInTheDocument();
-      expect(screen.getByAltText(/Mr. Bean tells you nice job!/i)).toBeInTheDocument();
+      expect(
+        screen.getByAltText(/Mr. Bean tells you nice job!/i)
+      ).toBeInTheDocument();
     });
   });
 });
