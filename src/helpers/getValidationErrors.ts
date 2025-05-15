@@ -1,7 +1,6 @@
-
-import type {FormData} from '../components/Form/Form';
-import {validatePhone} from './validatePhone';
-import {validateCorporationNumber} from './validateCorporateNumber'
+import type { FormData } from '../components/Form/Form';
+import { validatePhone } from './validatePhone';
+import { validateCorporationNumber } from './validateCorporateNumber';
 
 export const getValidationErrors = (
   data: FormData

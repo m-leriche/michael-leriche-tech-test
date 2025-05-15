@@ -29,22 +29,34 @@ describe('Form', () => {
     await waitFor(() => {
       expect(screen.getByText(/First name is required/i)).toBeInTheDocument();
       expect(screen.getByText(/Last name is required/i)).toBeInTheDocument();
-      expect(screen.getByText(/Invalid Canadian phone number/i)).toBeInTheDocument();
+      expect(
+        screen.getByText(/Invalid Canadian phone number/i)
+      ).toBeInTheDocument();
     });
   });
 
   it('displays success message and image on valid submission', async () => {
     render(<Form />);
 
-    fireEvent.change(screen.getByLabelText(/First Name/i), { target: { value: 'John' } });
-    fireEvent.change(screen.getByLabelText(/Last Name/i), { target: { value: 'Doe' } });
-    fireEvent.change(screen.getByLabelText(/Phone Number/i), { target: { value: '+11234567890' } });
-    fireEvent.change(screen.getByLabelText(/Corporation Number/i), { target: { value: '123456789' } });
+    fireEvent.change(screen.getByLabelText(/First Name/i), {
+      target: { value: 'John' },
+    });
+    fireEvent.change(screen.getByLabelText(/Last Name/i), {
+      target: { value: 'Doe' },
+    });
+    fireEvent.change(screen.getByLabelText(/Phone Number/i), {
+      target: { value: '+11234567890' },
+    });
+    fireEvent.change(screen.getByLabelText(/Corporation Number/i), {
+      target: { value: '123456789' },
+    });
 
     fireEvent.click(screen.getByRole('button', { name: /submit/i }));
 
     await waitFor(() => {
-      expect(screen.getByText(/Form submitted successfully!/i)).toBeInTheDocument();
+      expect(
+        screen.getByText(/Form submitted successfully!/i)
+      ).toBeInTheDocument();
       expect(screen.getByAltText(/Banner/i)).toBeInTheDocument();
     });
   });

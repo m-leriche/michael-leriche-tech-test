@@ -21,7 +21,9 @@ describe('FormField', () => {
 
   it('renders the placeholder when provided', () => {
     render(<FormField {...baseProps} placeholder="Enter something..." />);
-    expect(screen.getByPlaceholderText('Enter something...')).toBeInTheDocument();
+    expect(
+      screen.getByPlaceholderText('Enter something...')
+    ).toBeInTheDocument();
   });
 
   it('calls onChange when typing', () => {

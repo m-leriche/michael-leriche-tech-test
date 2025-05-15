@@ -17,13 +17,13 @@ A tech test project scaffolded with Vite, React, TailwindCSS, and TypeScript.
 npm install
 ```
 
-### Run Local Environment 
+### Run Local Environment
 
 ```bash
 npm run dev
 ```
 
-### Run Tests 
+### Run Tests
 
 ```bash
 npm run test
